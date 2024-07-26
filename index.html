@@ -7,11 +7,27 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="dist/images/disneyplus.svg" alt="Disney Plus">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney Plus">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As melhores historias em um só lugar.
             </h3>
@@ -25,12 +41,12 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="Star Plus">
-                    <button>ASSINE AGORA</button>
+                    <button class="button">ASSINE AGORA</button>
                     <span class="text">R$ 45,90 por mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="Star Plus">
-                    <button>ASSINE AGORA</button>
+                    <button class="button">ASSINE AGORA</button>
                     <span class="text">R$ 45,90 por mês*</span>
                 </li>
             </ul>
@@ -154,7 +170,10 @@
         </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
+    <picture>
+        <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
         <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+    </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e series</h2>
             <p class="text--big">
@@ -209,6 +228,79 @@
             </li>
         </ul>
     </section>
+    <section class="faq">
+        <h2 class="title">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que esta incluido no Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>Benefícios de assinar o Disney+:</p> <br>
+                    <p class="respostas">  • Estreias de filmes, séries originais e clássicos da Disney, Pixar, Marvel, Star Wars, National Geographic e Star.</p> <br>
+                    <p class="respostas">  • Os torneios mais importantes do mundo e programas da ESPN ao vivo.</p> <br>
+                    <p class="respostas">  • Até quatro telas ao mesmo tempo com o Disney+ Premium, e até duas com o Disney+ Padrão.</p> <br>
+                    <p class="respostas">  • Downloads, criação de perfis e controle parental para personalizar a experiência por idade, de acordo com o seu plano.</p> <br>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quais formas de pagamento posso utilizar?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google Play Store, App Store da Apple, Mercado Livre e provedores locais de TV, telefonia e internet.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Onde posso assistir ao Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames, decodificadores e smart TVs. Confira a <a href="#">lista completa de dispositivos compatíveis na Central de Ajuda.</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="dist/images/disneyplus.svg" alt="Disney+">
+            <ul class="footer_links">
+                <li class="footer__links__item">
+                    <div class="linguagem-selector">
+                        <img src="dist/images/icones/globe.svg" alt="Globo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Portugues</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e condições de uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Politica de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compativeis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">© 2024 Disney e suas empresas afiliadas. Todos os direitos reservados.</p>
+            <p class="text--small">A programação do conteúdo esportivo varia de acordo com o plano. Para usar o Disney+, é necessário ser assinante e ter mais de 18 anos de idade. Conteúdo sujeito a disponibilidade.</p>
+            <p class="text--small">O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20</p>
+        </div>
+    </footer>
     <script src="./src/main.js"></script>
 </body>
 </html>
